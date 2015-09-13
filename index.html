@@ -9,30 +9,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
-
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
+		<link rel="stylesheet" href="css/custom.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
 	</head>
 
 	<body>
 
 		<div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 
                 <section>
@@ -99,6 +83,31 @@
 					</section>
 
 					<section>
+						<h3>L'entreprise Wandi &ndash; références</h3>
+						<div class="wandi-references">
+							<div class="wandi-reference">
+								<img src="/img/logo-wwf.gif">
+								<a href="http://earthhour.fr/">earthhour.fr</a>
+								<a href="https://earthhour.paris/">earthhour.paris</a>
+							</div>
+							<div class="wandi-reference">
+								<img src="/img/logo-superprof.png">
+								<a href="http://www.superprof.fr/">superprof.fr</a>
+							</div>
+						</div>
+						<div class="wandi-references">
+							<div class="wandi-reference">
+								<img src="/img/logo-vam.png">
+								<a href="http://www.vogavecmoi.com/">vogavecmoi.com</a>
+							</div>
+							<div class="wandi-reference">
+								<img src="/img/logo-nestle.jpg">
+								<a href="http://www.ciniminis-lickorbite.com/">ciniminis-lickorbite.com</a>
+							</div>
+						</div>
+					</section>
+
+					<section>
 						<h3>Mission</h3>
 						<ul>
 							<li><strong>Développement</strong>  et <strong>maintenance</strong> de sites web</li>
@@ -106,21 +115,6 @@
 							<li class="fragment">Propositions d'amélioration (outils, méthodes)</li>
 							<li class="fragment"><strong>Mise en place d'un workflow front-end</strong></li>
 						</ul>
-					</section>
-
-					<section>
-						<h3>L'entreprise Wandi &ndash; références</h3>
-						<video src="/video/triathlon.ogg" autoplay loop></video>
-					</section>
-
-					<section>
-						<h3>L'entreprise Wandi &ndash; références</h3>
-						<video src="/video/superprof.ogg" autoplay loop></video>
-					</section>
-
-					<section>
-						<h3>L'entreprise Wandi &ndash; références</h3>
-						<video src="/video/cafepanda.ogg" autoplay loop></video>
 					</section>
 				</section>
 
@@ -135,7 +129,7 @@
 
 					<section>
 						<h3>Architecture classique</h3>
-						<img src="/img/archi-classique.png" />
+						<img src="/img/archi-classique.png">
 
 						<aside class="notes">
 
@@ -153,8 +147,12 @@
 					</section>
 
 					<section>
+						<video src="/video/lvmh.ogg"></video>
+					</section>
+
+					<section>
 						<h3>Architecture AJAX</h3>
-						<img src="/img/archi-ajax.png" />
+						<img src="/img/archi-ajax.png">
 
 						<aside class="notes">
 
@@ -172,6 +170,10 @@
 						<aside class="notes">
 
 						</aside>
+					</section>
+
+					<section>
+						<video src="/video/superprof.ogg"></video>
 					</section>
 
 					<section>
@@ -193,6 +195,15 @@
 						<aside class="notes">
 
 						</aside>
+					</section>
+
+					<section>
+						<h3>Architecure MV* côté client</h3>
+						<img src="/img/archi-mvc.png">
+					</section>
+
+					<section>
+						<video src="/video/cafepanda.ogg"></video>
 					</section>
 				</section>
 
@@ -255,6 +266,14 @@
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
 					{ src: 'plugin/notes/notes.js', async: true }
 				]
+			});
+
+			Reveal.addEventListener('slidechanged', function(event) {
+				var video = event.currentSlide.querySelector('video');
+
+				if (video) {
+					video.play();
+				}
 			});
 
 		</script>

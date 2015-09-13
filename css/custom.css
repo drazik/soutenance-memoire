@@ -1,0 +1,23 @@
+.wandi-references {
+    display: table;
+    width: 100%;
+}
+
+.wandi-reference {
+    display: table-cell;
+    width: 50%;
+
+    vertical-align: middle;
+}
+
+.wandi-reference img {
+    display: block;
+    margin: 15px auto !important;
+    width: auto;
+    max-height: 150px !important;
+    border-width: 0 !important;
+}
+
+.wandi-reference a {
+    display: block;
+}
