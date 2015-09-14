@@ -32,7 +32,10 @@
 
 					<aside class="notes">
 						<p>
-							Sujet qui a autant un aspect technique qu'organisationnel
+							Bonjour, aujourd'hui je vais donc vous présenter mon sujet de mémoire : les nouvelles architectures web, et on va plus précisément s'intéresser aux impacts qu'elles ont sur les entreprises, et comment celles-ci s'adaptent à ces changements.
+						</p>
+						<p>
+							C'est un sujet qui a autant un aspect technique qu'organisationnel, et c'est ce qui le rend d'autant plus interressant à mon sens
 						</p>
 					</aside>
                 </section>
@@ -49,7 +52,16 @@
 
 					<aside class="notes">
 						<p>
+							Je commencerai par vous présenter le contexte dans lequel j'ai effectué mes deux années de Master, et qui m'a conduit à choisir ce sujet de mémoire
+						</p>
+						<p>
 							Pour comprendre le besoin d'une nouvelle architecture, les impacts que celle-ci peut avoir et comment les entreprises s'adaptent, il faut d'abord avoir en tête les architectures les plus communément utilisées aujourd'hui
+						</p>
+						<p>
+							Nous verrons ensuite quelle nouvelle architecture répond aux besoins que les architectures actuelles ne peuvent pas satisfaire
+						</p>
+						<p>
+							Puis nous verrons quels sont les impacts de cette architecture sur le SI et la DSI d'une entreprise, et comment celle-ci s'adapte à ceux-ci
 						</p>
 					</aside>
 				</section>
@@ -115,6 +127,17 @@
 							<li class="fragment">Propositions d'amélioration (outils, méthodes)</li>
 							<li class="fragment"><strong>Mise en place d'un workflow front-end</strong></li>
 						</ul>
+
+						<aside class="notes">
+							<ul>
+								<li>Mission très opérationnelle</li>
+								<li>Mais dans une entreprise comme Wandi, des aspects opérationnels ont une très grande importance</li>
+								<li>Du coup chaque collaborateur est amené à avoir une réflexion sur le processus de développement</li>
+								<li>Et à proposer des outils et des méthodes pour l'améliorer</li>
+								<li>C'est dans ce cadre que j'ai moi même pu introduire l'industrialisation du développement front-end au sein de l'agence</li>
+								<li>Ca consiste à mettre en place de l'automatisation de tâches répétitives et des méthodes de développement qui permettent de produire du code de meilleure qualité plus rapidement</li>
+							</ul>
+						</aside>
 					</section>
 				</section>
 
@@ -122,9 +145,6 @@
 					<section>
 						<h2>Architectures web actuelles</h2>
 
-						<aside class="notes">
-
-						</aside>
 					</section>
 
 					<section>
@@ -132,7 +152,13 @@
 						<img src="/img/archi-classique.png">
 
 						<aside class="notes">
-
+							<ul>
+								<li>Existe depuis le début du web</li>
+								<li>Affichage de documents statiques</li>
+								<li>Le serveur s'occupe de tout : gestion des données, fonctions métier, génération de l'IHM</li>
+								<li>Le client ne fait qu'afficher le document et les ressources statiques que le serveur lui envoie</li>
+								<li>Archi adaptée aux machines peu puissantes de l'époque, et au fait que le web n'avait vocation qu'à faire circuler de la connaissance</li>
+							</ul>
 						</aside>
 					</section>
 
@@ -140,9 +166,9 @@
 						<h3>Architecture classique</h3>
 						<ul>
 							<li class="fragment">Simple à mettre en place</li>
-							<li class="fragment">Autre avantage</li>
 							<li class="fragment">Affichage de documents statiques</li>
 							<li class="fragment">Rechargement de la page à chaque action utilisateur</li>
+							<li class="fragment">Ancienne mais toujours adaptée pour certains besoins</li>
 						</ul>
 					</section>
 
@@ -155,7 +181,13 @@
 						<img src="/img/archi-ajax.png">
 
 						<aside class="notes">
-
+							<ul>
+								<li>Le client reçoit toujours l'IHM générée par le serveur</li>
+								<li>Mais grâce à XHR et DOM, il est capable de mettre à jour des portions de pages sans tout recharger</li>
+								<li>Le serveur peut alors renvoyer soit des données brutes, soit des portions d'IHM</li>
+								<li>Accompagne les évolutions des usages du web : réseaux sociaux, interactivité, participation...</li>
+								<li>Accompagne aussi les évolutions des clients, capable d'en faire un peu plus qu'avant</li>
+							</ul>
 						</aside>
 					</section>
 
@@ -168,7 +200,11 @@
 						</ul>
 
 						<aside class="notes">
-
+							<ul>
+								<li>Des librairies JS sont apparues pour faciliter les développements</li>
+								<li>Mais c'est resté basé sur du code issu de l'architecture classique</li>
+								<li>Donc la complexité a très vite augmenté (exemple Facebook)</li>
+							</ul>
 						</aside>
 					</section>
 
@@ -184,6 +220,16 @@
 							<li class="fragment">Enjeux majeurs pour une entreprise du web</li>
 						</ul>
 						<h4 class="fragment" style="margin-top: 40px;">Nous avons besoin de concevoir les sites web <em>différemment</em></h4>
+
+						<aside class="notes">
+							<ul>
+								<li>Les utilisateurs sont habituées au comportement des applications natives</li>
+								<li>Ils veulent retrouver ça quand ils naviguent sur le web</li>
+								<li>Il faut donc leur proposer ce qu'ils attendent, c'est stratégique pour les entreprises du web</li>
+								<li>L'architecture AJAX peut potentiellement répondre à ce besoin, mais au prix d'une complexité qui ne fera qu'augmenter</li>
+								<li>Il faut donc une autre architecture</li>
+							</ul>
+						</aside>
 					</section>
 				</section>
 
