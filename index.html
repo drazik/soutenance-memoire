@@ -174,6 +174,13 @@
 
 					<section>
 						<video src="/video/lvmh.ogg"></video>
+
+						<aside class="notes">
+							<ul>
+								<li>La page refresh à chaque action</li>
+								<li>Même si il y a un peu d'interactivité, ça reste limité</li>
+							</ul>
+						</aside>
 					</section>
 
 					<section>
@@ -210,6 +217,13 @@
 
 					<section>
 						<video src="/video/superprof.ogg"></video>
+
+						<aside class="notes">
+							<ul>
+								<li>Des informations sont ajoutées à la page pendant la saisie</li>
+								<li>Mais on refresh quand même quand on passe à un autre contexte</li>
+							</ul>
+						</aside>
 					</section>
 
 					<section>
@@ -253,27 +267,63 @@
 
 					<section>
 						<video src="/video/cafepanda.ogg"></video>
+
+						<aside class="notes">
+							<ul>
+								<li>On ne refresh jamais</li>
+								<li>Les données sont récupérée sur le serveur quand on en a besoin</li>
+								<li>Et le navigateur s'occupe de générer et mettre à jour l'IHM</li>
+								<li>Client et serveur sont totalement indépendant, ils discutent via HTTP</li>
+							</ul>
+						</aside>
 					</section>
 
 					<section>
 						<h3>Architecture MV* côté client &ndash; utilisation massive de JavaScript</h3>
 						<img src="/img/browsers.png" class="fragment">
 						<p style="font-size: 0.75em; font-style: italic;" class="fragment">(plus le score est faible, plus les performances sont élevées)</p>
+
+						<aside class="notes">
+							<ul>
+								<li>Cest possible grâce aux efforts des éditeurs de navigateurs</li>
+							</ul>
+						</aside>
 					</section>
 
 					<section>
 						<h3>Architecture MV* côté client &ndash; utilisation massive de JavaScript</h3>
 						<img src="/img/industrialisation-front.png">
+
+						<aside class="notes">
+							<ul>
+								<li>Avant JS était un langage jouet</li>
+								<li>Aujourd'hui un écosystème existe</li>
+								<li>Et on est capable d'industrialiser des développements JS</li>
+							</ul>
+						</aside>
 					</section>
 
 					<section>
 						<h3>Architecture MV* côté client &ndash; back-end autonome</h3>
 						<img src="/img/exemple-api.png" class="fragment">
+
+						<aside class="notes">
+							<ul>
+								<li>L'api répond aux requêtes qu'on lui envoie, avec les données demandées (ou une erreur...)</li>
+							</ul>
+						</aside>
 					</section>
 
 					<section>
 						<h3>Architecture MV* côté client &ndash; back-end autonome</h3>
 						<img src="/img/avantage-api.png" style="height: 520px;">
+
+						<aside class="notes">
+							<ul>
+								<li>L'API étant totalement déconnectée du client, elle peut servir un client web, mais aussi des applications mobiles...</li>
+								<li>Le support et le format d'échange sont standardisés</li>
+							</ul>
+						</aside>
 					</section>
 				</section>
 
